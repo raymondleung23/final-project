@@ -1,0 +1,26 @@
+spring:
+  datasource:
+    driverClassName: "org.postgresql.Driver"
+    url: "jdbc:postgresql://localhost:5432/final_project"
+    username: "postgres"
+    password: "a27416373a"
+  jpa:
+    show-sql: true
+    hibernate.ddl-auto: update
+  data:
+    redis:
+      host: "redis-container"
+      port: 6379
+      database: 0
+      timeout: 2000
+
+# service-api:
+#   jsonplaceholder:
+#     host: "jsonplaceholder.typicode.com"
+#     endpoints:
+#       stocks: "/stocks"
+#       profiles: "/profiles"
+#       ohlcDatas: "/ohlcDatas"
+
+server:
+  port: 8082
