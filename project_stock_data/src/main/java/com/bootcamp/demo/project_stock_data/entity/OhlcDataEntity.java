@@ -44,4 +44,7 @@ public class OhlcDataEntity {
   @Column(name = "timestamp", nullable = false)
   private LocalDateTime timestamp;
 
+  @Column(name = "volume", nullable = false)
+  private BigDecimal volume;
+
 }
